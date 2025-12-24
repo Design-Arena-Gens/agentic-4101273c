@@ -1,0 +1,400 @@
+.page {
+  background: radial-gradient(circle at top, #f3f6ff 0%, #fffdf7 40%, #ffffff 100%);
+  min-height: 100vh;
+  padding: 48px 16px 80px;
+  color: #1f2937;
+  font-family: var(--font-geist-sans, "Segoe UI", sans-serif);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 0 auto 32px;
+  max-width: 1100px;
+}
+
+.title {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  max-width: 560px;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.countdown {
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 16px 20px;
+  text-align: center;
+  min-width: 120px;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
+}
+
+.countdown span {
+  font-size: 2.25rem;
+  font-weight: 700;
+  display: block;
+}
+
+.form {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 25px 60px rgba(79, 70, 229, 0.08);
+  margin: 0 auto 32px;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form h2 {
+  font-size: 1.4rem;
+  color: #1f2937;
+}
+
+.formGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.formField input,
+.formField select,
+.subjectRow textarea,
+.subjectRow input,
+.explainControls textarea {
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  transition: border 0.2s, box-shadow 0.2s;
+  resize: vertical;
+}
+
+.formField input:focus,
+.formField select:focus,
+.subjectRow textarea:focus,
+.subjectRow input:focus,
+.explainControls textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.subjectBlock {
+  background: #f9fafb;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.subjectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.subjectHeader button {
+  background: transparent;
+  border: 1px dashed #4f46e5;
+  border-radius: 999px;
+  padding: 8px 16px;
+  color: #4f46e5;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.subjectHeader button:hover {
+  background: rgba(79, 70, 229, 0.08);
+}
+
+.subjectList {
+  display: grid;
+  gap: 16px;
+}
+
+.subjectRow {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: inset 0 0 0 1px #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.subjectRowHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.subjectRowHeader button {
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.subjectRow textarea {
+  min-height: 100px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.actions button {
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.actions button:first-of-type {
+  background: linear-gradient(135deg, #6366f1, #2563eb);
+  color: #ffffff;
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.25);
+}
+
+.actions button:first-of-type:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 40px rgba(99, 102, 241, 0.32);
+}
+
+.actions button:last-of-type {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.modeNote {
+  font-size: 0.95rem;
+  color: #2563eb;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.planSection {
+  margin: 0 auto 40px;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.planSection h2 {
+  font-size: 1.6rem;
+  color: #1f2937;
+}
+
+.emptyState {
+  padding: 24px;
+  border-radius: 16px;
+  background: #f9fafb;
+  color: #4b5563;
+  text-align: center;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(37, 99, 235, 0.08));
+}
+
+.summary progress {
+  width: 220px;
+  height: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #e5e7eb;
+}
+
+.summary progress::-webkit-progress-bar {
+  background: #e5e7eb;
+}
+
+.summary progress::-webkit-progress-value {
+  background: #2563eb;
+}
+
+.summary button {
+  background: transparent;
+  border: 1px solid #2563eb;
+  padding: 10px 20px;
+  border-radius: 999px;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.overload {
+  color: #dc2626;
+  background: rgba(220, 38, 38, 0.08);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+}
+
+.todayCard {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.08);
+}
+
+.todayCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.todayCard ul,
+.dayCard ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+.todayCard label,
+.dayCard label {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.dayGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.dayCard {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.04);
+  border: 1px solid rgba(229, 231, 235, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dayCard header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dayCard header span {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.dayCard header p {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.sideBySide {
+  margin: 0 auto;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.motivationCard,
+.explainCard {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 16px 40px rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.08);
+}
+
+.motivationCard h3,
+.explainCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+.explainControls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.explainControls button {
+  align-self: flex-start;
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 999px;
+  border: none;
+  padding: 10px 22px;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.2);
+}
+
+.answer {
+  font-size: 0.95rem;
+  color: #374151;
+  min-height: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .countdown {
+    align-self: flex-start;
+  }
+
+  .form {
+    padding: 24px;
+  }
+
+  .dayGrid {
+    grid-template-columns: 1fr;
+  }
+}
